@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard with Grid and Flexbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <!-- Header -->
+        <header class="header">
+            <h1>Admin Dashboard</h1>
+            <div class="user-info">
+                <span>Welcome, Admin</span>
+                <span class="avatar">A</span>
+            </div>
+        </header>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <nav>
+                <a href="#" class="active">🏠 Dashboard</a>
+                <a href="#">👥 Users</a>
+                <a href="#">📊 Analytics</a>
+                <a href="#">📦 Products</a>
+                <a href="#">⚙️ Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <h2>Dashboard Overview</h2>
+            <p class="subtitle">Here is your business summary.</p>
+
+            <!-- Statistic Cards -->
+            <section class="stats-grid">
+
+                <article class="stat-card blue">
+                    <div class="card-icon">👥</div>
+                    <div class="card-info">
+                        <h3>Total Users</h3>
+                        <p class="number">2,450</p>
+                        <p class="description">+12% this month</p>
+                    </div>
+                </article>
+
+                <article class="stat-card green">
+                    <div class="card-icon">💰</div>
+                    <div class="card-info">
+                        <h3>Total Revenue</h3>
+                        <p class="number">$18,500</p>
+                        <p class="description">+8% this month</p>
+                    </div>
+                </article>
+
+                <article class="stat-card orange">
+                    <div class="card-icon">📦</div>
+                    <div class="card-info">
+                        <h3>Total Orders</h3>
+                        <p class="number">1,280</p>
+                        <p class="description">+15% this month</p>
+                    </div>
+                </article>
+
+                <article class="stat-card purple">
+                    <div class="card-icon">📈</div>
+                    <div class="card-info">
+                        <h3>Visitors</h3>
+                        <p class="number">8,920</p>
+                        <p class="description">+10% this month</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity">
+                <h2>Recent Activity</h2>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Activity</th>
+                                <th>User</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>New order placed</td>
+                                <td>Rahul</td>
+                                <td>25 Oct 2026</td>
+                                <td><span class="status success">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>New user registered</td>
+                                <td>Priya</td>
+                                <td>24 Oct 2026</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Payment received</td>
+                                <td>Amit</td>
+                                <td>23 Oct 2026</td>
+                                <td><span class="status success">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>Product updated</td>
+                                <td>Neha</td>
+                                <td>22 Oct 2026</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Admin Dashboard. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
